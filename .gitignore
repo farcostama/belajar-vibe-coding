@@ -19,6 +19,8 @@
 .DS_Store
 *.pem
 prompt_list/
+prompt.txt
+issue.md
 
 # debug
 npm-debug.log*
