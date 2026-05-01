@@ -1,8 +1,10 @@
 import { Elysia } from "elysia";
 import { db } from "./db";
 import { sql } from "drizzle-orm";
+import { usersRoutes } from "./routes/users-routes";
 
 const app = new Elysia()
+  .use(usersRoutes)
   .get("/", async () => {
     try {
       // Test database connection
